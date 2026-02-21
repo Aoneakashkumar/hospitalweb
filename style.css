@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #0d6efd;
+  color: white;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1588776814546-ec7e9d6d17c4') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+}
+
+.hero-content p {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.primary {
+  background: #0d6efd;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  color: #0d6efd;
+  margin-left: 10px;
+}
+
+/* Services */
+.services {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.service-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+}
+
+/* Doctors */
+.doctors {
+  padding: 60px 10%;
+  text-align: center;
+  background: #eef3f9;
+}
+
+.doctor-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.doctor-card {
+  background: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+}
+
+.doctor-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.contact button {
+  padding: 10px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+}
+
+/* Footer */
+footer {
+  background: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .service-box,
+  .doctor-box {
+      flex-direction: column;
+  }
+
+  .card,
+  .doctor-card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
